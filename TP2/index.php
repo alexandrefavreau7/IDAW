@@ -16,8 +16,7 @@ require_once('template_header.php');
             
             <h1>Bienvenue</h1>
             <p>Site de CV</p>
-    </body>
-       
-
-</html> 
-
+            <?php
+            
+require_once('template_footer.php');
+?>

@@ -66,3 +66,15 @@ ul {
         margin-top: 200px;
         display:inline-block
     }
+
+    #footer {
+    margin-top: 400 px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color:rosybrown;
+    color: #fff;
+        position : absolute;
+        bottom:0;
+
+}

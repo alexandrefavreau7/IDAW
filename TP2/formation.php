@@ -31,5 +31,6 @@ require_once('template_header.php');
        
 
 
-    </body>
-</html>
+            <?php
+require_once('template_footer.php');
+?>

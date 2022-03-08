@@ -62,9 +62,9 @@ ou encore outils informatiques pour l'amélioration continue. Et étudie toutes 
         </p> 
     </div>
 
-    </body>
-</html>
-
+    <?php
+require_once('template_footer.php');
+?>
 
 
 
