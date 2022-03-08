@@ -1,23 +1,13 @@
 <?php
 require_once('template_header.php');
 ?>
+<?php
+require_once('template_menu.php');
+?>
 
-
-        <nav class="menu">
-            <figure class="imgAlex"> 
+<figure class="imgAlex"> 
                 <img src="images/alex1.jpg" width="142" height="200">
             </figure>
-            <ul>
-
-            <li><a href="index.php">Accueil</a></li>
-            <li><a id="currentpage" href="cv.php">CV</a></li>
-            <li><a href="hobbies.php">Hobbies</a></li>
-            <li><a href="formation.php">Formation</a></li>
-            </ul>
-            </nav>
-
-
-
         <h1>Mon CV - 2022</h1>
         <h2>Recherche de stage à partir d'avril 2022</h2>
         <h3>À la recherche d'un stage de 16 semaines à partir du 4 avril 2022 notamment dans les domaines suivants : Data (Data Analyst, Data Science, Classification, apprentissage dynamique, big data, clustering), Gestion de projet, Conseil IT,
