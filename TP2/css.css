@@ -54,7 +54,9 @@ ul {
 
     #langues {
         float: right;
+        /* margin-right: 20; */
         top: 100px;
+        /* top: 10%; */
     }
 
     #Contact {

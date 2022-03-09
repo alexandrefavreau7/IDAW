@@ -22,7 +22,8 @@ function renderMenuToHTML($currentPageId) {
         'cv' => array( 'CV' ),
         'formation' => array('Formation'),
         'hobbies' => array('Hobbies'),
-        'infos_techniques' => array('Infos technique')
+        'infos_techniques' => array('Infos technique'),
+        'contact' => array('Contact'),
     );
 
 
