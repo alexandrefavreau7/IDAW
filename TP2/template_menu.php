@@ -18,7 +18,7 @@ function renderMenuToHTML($currentPageId) {
     // un tableau qui definit la structure du site
     $mymenu = array(
         // idPage titre
-        'index' => array( 'Accueil' ),
+        'accueil' => array( 'Accueil' ),
         'cv' => array( 'CV' ),
         'formation' => array('Formation'),
         'hobbies' => array('Hobbies'),
@@ -26,33 +26,19 @@ function renderMenuToHTML($currentPageId) {
     );
 
 
-//     echo '<nav class="menu"><ul>';
-
-//     foreach ($mymenu as $value => PageParameters){
-//         echo "<li>";
-//         if($value == $currentPageId){
-//             echo '<a id= "currentpage" href="'.$value.'.php">'.$pageParameters[0];
-//         }
-//         else {
-//             echo '<a href="'.$.value.'.php">'.$pageParameters[0];
-//         }
-//         echo '</a></li>';
-//     }
-
-
-//     echo '</ul></nav>';
-// }
+    // echo "<p> currentPageId = $currentPageId</p>";
 
     echo "<nav>";
     echo "<ul>";
 
     foreach($mymenu as $pageId => $pageParameters){
-        echo "<li>";
+        echo "<li><a ";
+
         if($pageId == $currentPageId){
-            echo '<a id="currentpage" href="'.$pageId.'.php">'.$pageParameters[0];
-        }else{
-            echo '<a href="'.$pageId.'.php">'.$pageParameters[0];
+            echo  'id="currentpage"'; 
         }
+        echo 'href="index.php?page='.$pageId.'">'.$pageParameters[0];
+        
         echo "</a></li>";
     }
     
@@ -60,5 +46,33 @@ function renderMenuToHTML($currentPageId) {
     echo "</nav>";
     }
 
+
+
+
+//     foreach($mymenu as $pageId => $pageParameters){
+//         echo "<li>";
+//         if($pageId == $currentPageId){
+//             echo '<a id="currentpage" href="'.$pageId.'.php">'.$pageParameters[0];
+//         }else{
+//             echo '<a href="'.$pageId.'.php">'.$pageParameters[0];
+//         }
+//         echo "</a></li>";
+//     }
     
+//     echo "</ul>";
+//     echo "</nav>";
+// }
 ?>
+    
+<!-- // 
+
+// foreach($mymenu as $pageId => $pageParameters){
+//         echo "<li><a ";
+//         if($pageId == $currentPageId){
+//             echo  'id="currentpage"'; 
+//         }
+//         echo 'href="index.php?page='.$pageId.'">'.$pageParameters[0];
+        
+//         echo "</a></li>";
+//     }
+//  --> 

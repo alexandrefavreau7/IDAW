@@ -1,10 +1,3 @@
-<?php
-require_once('template_header.php');
-?>
-<?php
-require_once('template_menu.php');
-renderMenuToHTML('cv');
-?>
 
 
 <figure class="imgAlex"> 
@@ -54,9 +47,6 @@ ou encore outils informatiques pour l'amélioration continue. Et étudie toutes 
         </p> 
     </div>
 
-    <?php
-require_once('template_footer.php');
-?>
 
 
 
