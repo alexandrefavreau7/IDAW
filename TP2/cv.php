@@ -3,7 +3,9 @@ require_once('template_header.php');
 ?>
 <?php
 require_once('template_menu.php');
+renderMenuToHTML('cv');
 ?>
+
 
 <figure class="imgAlex"> 
                 <img src="images/alex1.jpg" width="142" height="200">
