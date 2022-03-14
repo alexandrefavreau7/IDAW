@@ -31,10 +31,22 @@ if( array_key_exists($tryLogin,$users) && $users[$tryLogin]==$tryPwd ) {
     $errorText = "Merci d'utiliser le formulaire de login";
     if(!$successfullyLogged) {
     echo $errorText;
-    } else {
+    } 
+    else {
+
     echo "<h1>Bienvenu ".$login."</h1>";
-    echo 'ID : ' .$login. ' Password : ' .$tryPwd;
+    echo 'ID : ' .$login. ' Password : ' .$tryPwd."<br>";
+    session_start();
+
+    $_SESSION['id'] = $login;
+    echo 'session enregistrée, Identifiant  : '.$_SESSION['id']."<br>";
     }
+
+    echo '<a href="test_navigation.php">Test Navigation</a> <br>';
+   echo '<a href="fermeture_session.php">Déconnexion</a>';
+
+
+    
     ?>
         
 

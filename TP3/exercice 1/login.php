@@ -25,20 +25,20 @@
 
 <?php 
 
-$styledefaut= "style1"
-echo '<link rel="stylesheet" href= "'.$styledefaut.'.css"/>';
+// $styledefaut= "style1"
+// echo '<link rel="stylesheet" href= "'.$styledefaut.'.css"/>';
 
-if (isset($_GET['css'])) {
-    $styledefaut = $_GET['css'];
-    echo '<link rel="stylesheet" href= "'.$styledefaut.'.css"/>';
-    echo $styledefaut."<br>";
-}
-else {
-    setcookie("cookie1",$styledefaut,time()+600);
-    echo $_COOKIE["cookie1"];
-    echo '<link rel="stylesheet" href= "'.$_COOKIE["cookie1"].'.css"/>';
+// if (isset($_GET['css'])) {
+//     $styledefaut = $_GET['css'];
+//     echo '<link rel="stylesheet" href= "'.$styledefaut.'.css"/>';
+//     echo $styledefaut."<br>";
+// }
+// else {
+//     setcookie("cookie1",$styledefaut,time()+600);
+//     echo $_COOKIE["cookie1"];
+//     echo '<link rel="stylesheet" href= "'.$_COOKIE["cookie1"].'.css"/>';
 
-}
+// }
 
 
 ?>
