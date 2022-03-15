@@ -10,3 +10,18 @@
     border-radius: 10px;
     border: 4px double #cccccc;
 }
+
+.table {
+    display: inline-block;
+    background-color: #385dd8;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+
+
+}
+
+body {
+
+
+    background-color: beige;
+}
