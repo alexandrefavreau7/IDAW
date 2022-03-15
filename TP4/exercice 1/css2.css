@@ -1,0 +1,12 @@
+.btn1 {
+    display: inline-block;
+    background-color: #389dd8;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+}
+.btn2 {
+    display: inline-block;
+    background-color: #d84b38;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+}

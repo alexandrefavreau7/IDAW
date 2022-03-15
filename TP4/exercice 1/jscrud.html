@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <title>tabletest</title>
+    <link rel="stylesheet" href="css2.css">
     <style>
     body{ margin-top: 5em; }
     .table {
@@ -72,23 +73,49 @@
 </div>
 </form>
 <script>
+
+
+    function suppr(bouton) {
+    
+    var row = bouton.parentNode.parentNode;
+    row.parentNode.removeChild(row)
+
+    }
+
+    function edit(bouton) {
+
+    }
+
     function onFormSubmit() {
 // prevent the form to be sent to the server
         event.preventDefault();
         let nom = $("#inputNom").val();
         let nom1 = $("#inputPrenom").val();
         let nom2 = $("#inputNaissance").val();
-
         let nom4 = $("#inputRemarques").val();
+
 
         if (document.getElementById("check").checked == true)
 	{
 		
         let nom3 = "oui"
-        $("#studentsTableBody").append(`<tr><td>${nom}</td><td>${nom1}</td><td>${nom2}</td><td>${nom3}</td><td>${nom4}</td><td></td><td></td></tr>`);
+        $("#studentsTableBody").append(`<tr><td>${nom}</td><td>${nom1}</td><td>${nom2}</td><td>${nom3}</td><td>${nom4}</td><td><a button class=btn1  btn-primary onclick="return edit(this)">Edit</a> <a button class=btn2 btn-primary onclick="return suppr(this)">Delete</a></td><td></td></tr>`);
+
     }
-        
+        else   {
+
+            let nom3 = "non"
+            $("#studentsTableBody").append(`<tr><td>${nom}</td><td>${nom1}</td><td>${nom2}</td><td></td><td>${nom4}</td><td><a button class=btn1 btn-primary onclick="return edit(this)">Edit</a> <a button class=btn2 btn-primary onclick="return suppr(this)">Delete</a></td><td></td></tr>`);
+            
+        }
+
+
+    
     }
+
+
+  
+
 </script>
 </body>
 </html>
