@@ -7,4 +7,6 @@ session_destroy();
 
 echo 'Déconnecté';
 
+header("location: IDAW/TP3/exercice 1/index.php");
+
 ?>
